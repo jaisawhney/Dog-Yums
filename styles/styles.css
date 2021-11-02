@@ -1,0 +1,52 @@
+.heroimg {
+    height: 75vh;
+    background-blend-mode: multiply;
+    background: rgba(0, 0, 0, .1) url("../images/dog-N04FIfHhv_k-unsplash.jpg") no-repeat fixed center;
+}
+
+.carousel-inner {
+    margin-bottom: 50px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.cus-btn-link, .cus-btn-link:hover, .cus-btn-link:active, .cus-btn-link:visited {
+    border: none;
+    color: white;
+    background-color: #e1684f;
+    border-radius: 15px;
+}
+
+nav .active::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: #FF9577FF solid 2px;
+}
+
+.icn {
+    font-size: 3rem;
+    color: #e1684f;
+}
+
+.txt {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    nav {
+        background-color: white;
+    }
+
+    nav .active::after {
+        display: none;
+    }
+
+    .txt, .icn {
+        display: block;
+        text-align: center;
+    }
+}
