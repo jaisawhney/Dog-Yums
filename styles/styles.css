@@ -19,21 +19,20 @@ html, body {
     bottom: -50px;
 }
 
-.cus-btn-link, .cus-btn-link:active, .cus-btn-link:visited {
+.cus-btn, .cus-btn:active, .cus-btn:visited {
+    color: white;
+    background-color: #e1684f;
     border: none;
-    color: white;
-    background-color: #e1684f;
-    border-radius: 15px;
 }
 
-.cus-btn-cart, .cus-btn-cart:active, .cus-btn-cart:visited {
-    color: white;
-    background-color: #e1684f;
-}
-
-.cus-btn-link:hover, .cus-btn-cart:hover {
+.cus-btn:hover {
     color: white;
     background-color: #e04327;
+}
+
+.cus-btn-link, .cus-btn-link:active, .cus-btn-link:visited {
+    border: none;
+    border-radius: 15px;
 }
 
 nav .active::after {

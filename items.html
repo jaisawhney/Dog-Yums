@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dog Yums</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <style>
+            body {
+                margin-bottom: 100px;
+            }
+
+            .card {
+                transition: transform 250ms, box-shadow 250ms;
+            }
+
+            .card:hover {
+                border: none;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                transform: scale(1.05);
+            }
+
+            .dropdown-toggle[aria-expanded="true"] {
+                background-color: #e04327;
+            }
+
+            .dropdown-item:active {
+                color: inherit;
+                background-color: lightgrey;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Dog Yums</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-links">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-links">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./items.html">Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section>
+                <header class="text-center">
+                    <h1>Items</h1>
+                    <p class="lead">Below you will all of our available items!</p>
+                </header>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="dropdown">
+                        <button class="btn btn-primary cus-btn cus-btn-dropdown dropdown-toggle" type="button"
+                                id="dropdownCategory"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </button>
+                        <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="dropdownCategory">
+                            <li>
+                                <button type="button" data-category="food" class="dropdown-item">Food</button>
+                            </li>
+                            <li>
+                                <button type="button" data-category="treats" class="dropdown-item">Treats</button>
+                            </li>
+                            <li>
+                                <button type="button" data-category="toys" class="dropdown-item">Toys</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 item" data-category="food">
+                            <div class="card mt-3">
+                                <img draggable="false" class="card-img-top"
+                                     src="./images/items/food-zxqaAkkayP8-unsplash.jpg"
+                                     alt="dog food">
+                                <div class="card-body">
+                                    <h3 class="card-title">Dog food</h3>
+                                    <p class="card-text">High quality dog food</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="m-1 lead price align-middle">$15</p>
+                                        <a href="#" class="btn cus-btn cus-btn-cart align-middle"> <i
+                                                class="bi bi-cart-plus"></i>
+                                            Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item" data-category="treats">
+                            <div class="card mt-3">
+                                <img draggable="false" class="card-img-top"
+                                     src="./images/items/treat-w6elADh_jww-unsplash.jpg"
+                                     alt="dog treats">
+                                <div class="card-body">
+                                    <h3 class="card-title">Dog Bone Treats</h3>
+                                    <p class="card-text">Fun bone shaped dog treats</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="m-1 lead price align-middle">$5</p>
+                                        <a href="#" class="btn cus-btn cus-btn-cart align-middle"> <i
+                                                class="bi bi-cart-plus"></i>
+                                            Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item" data-category="treats">
+                            <div class="card mt-3">
+                                <img draggable="false" class="card-img-top"
+                                     src="./images/items/james-lacy-xe_MtM-ixlw-unsplash.jpg"
+                                     alt="dog treats">
+                                <div class="card-body">
+                                    <h3 class="card-title">Dog Chews</h3>
+                                    <p class="card-text">Healthy dog chews</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="m-1 lead price align-middle">$5</p>
+                                        <a href="#" class="btn cus-btn cus-btn-cart align-middle"> <i
+                                                class="bi bi-cart-plus"></i>
+                                            Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 item" data-category="toys">
+                            <div class="card mt-3">
+                                <img draggable="false" class="card-img-top"
+                                     src="./images/items/kobi-kadosh-q6_CCxCnFbc-unsplash.jpg"
+                                     alt="dog toy">
+                                <div class="card-body">
+                                    <h3 class="card-title">Tug of War Toy</h3>
+                                    <p class="card-text">Energizing tug of war toy</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="m-1 lead price align-middle">$10</p>
+                                        <a href="#" class="btn cus-btn cus-btn-cart align-middle"> <i
+                                                class="bi bi-cart-plus"></i>
+                                            Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item" data-category="treats">
+                            <div class="card mt-3">
+                                <img draggable="false" class="card-img-top"
+                                     src="./images/items/max-kleinen-RqPLsKCd_yE-unsplash.jpg"
+                                     alt="dog treats">
+                                <div class="card-body">
+                                    <h3 class="card-title">Dog Treat</h3>
+                                    <p class="card-text">Training treats</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="m-1 lead price align-middle">$8</p>
+                                        <a href="#" class="btn cus-btn cus-btn-cart align-middle"> <i
+                                                class="bi bi-cart-plus"></i>
+                                            Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item" data-category="toys">
+                            <div class="card mt-3">
+                                <img draggable="false" class="card-img-top"
+                                     src="./images/items/jesper-brouwers-oD8uurkrH4c-unsplash.jpg"
+                                     alt="dog toy">
+                                <div class="card-body">
+                                    <h3 class="card-title">Stuffed Animal Toy</h3>
+                                    <p class="card-text">Stuffed animal toy</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="m-1 lead price align-middle">$5</p>
+                                        <a href="#" class="btn cus-btn cus-btn-cart align-middle"> <i
+                                                class="bi bi-cart-plus"></i>
+                                            Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="fixed-bottom text-center text-dark p-2 bg-dark">
+            <div class="container">
+                <p class="text-light">Dog Yums</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+                integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+                crossorigin="anonymous"></script>
+
+        <script>
+            const cards = document.querySelectorAll(".item");
+            document.getElementById("dropdown-menu").addEventListener("click", click);
+
+            function click(e) {
+                const category = e.target.dataset.category;
+                if (!category) return;
+                cards.forEach(function (card) {
+                    if (card.dataset.category !== category) {
+                        card.style.display = "none";
+                    } else {
+                        card.style.display = "";
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
